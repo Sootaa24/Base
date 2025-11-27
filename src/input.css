@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+
+@layer base {
+  :root {
+    --color-primary: #181c31;
+    --color-secondary: #79808a;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Inter, sans-serif;
+    color: #79808a;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Outfit, sans-serif;
+    color: #181c31;
+  }
+}
+@layer components {
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+}
+
+@layer utilities {
+  @keyframes ud-rotating {
+    0%,
+    100% {
+      transform: rotate(360deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+  .animate-ud-rotating {
+    animation: ud-rotating 30s linear infinite;
+  }
+}
+
+/* swiper */
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
