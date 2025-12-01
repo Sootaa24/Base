@@ -16,37 +16,11 @@
     font-family: Inter, sans-serif;
     color: #79808a;
   }
-  .dark body {
-    color: #d0d5e0;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: Outfit, sans-serif;
-    color: #181c31;
-  }
-  .dark h1,
-  .dark h2,
-  .dark h3,
-  .dark h4,
-  .dark h5,
-  .dark h6 {
-    color: #ffffff;
-  }
   a {
     color: inherit;
   }
-  .dark a {
-    color: #d0d5e0;
-  }
   p {
     color: #79808a;
-  }
-  .dark p {
-    color: #d0d5e0;
   }
 }
 @layer components {
@@ -70,19 +44,12 @@
     z-index: 10;
     margin-top: 0.5rem;
   }
-  .dark .dropdown {
-    background-color: #1c2136;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
   .dropdown.flex {
     display: flex !important;
   }
   .dropdown li {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid #f0f0f0;
-  }
-  .dark .dropdown li {
-    border-bottom-color: #2a2f45;
   }
   .dropdown li:last-child {
     border-bottom: none;
@@ -93,38 +60,19 @@
     display: block;
     transition: color 0.3s ease;
   }
-  .dark .dropdown a {
-    color: #d0d5e0;
-  }
   .dropdown a:hover {
     color: #4e6bff;
   }
 }
-  /* Project overlay text styling */
   .project-item h4,
   .project-item p {
     color: #000000;
   }
-  .dark .project-item h4,
-  .dark .project-item p {
-    color: #ffffff;
-  }
-  /* Project icon SVG styling for dark mode */
   .project-item svg.fill-body {
     fill: #79808a;
   }
-  .dark .project-item svg.fill-body {
-    fill: #d0d5e0;
-  }
   .project-item svg.group-hover\:fill-white:hover {
     fill: white !important;
-  }
-  /* Sign In and similar text dark mode */
-  .dark .text-body {
-    color: #d0d5e0 !important;
-  }
-  .dark .dark\:hidden {
-    display: none !important;
   }
 
 @layer utilities {
