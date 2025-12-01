@@ -115,6 +115,37 @@
       }
     }
   }
+
+  /* wowjs */
+  .wow {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.8s cubic-bezier(0.5, 0, 0, 1),
+      transform 1.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+
+  .wow.fadeInDown {
+    transform: translateY(-40px);
+  }
+
+  .wow.fadeInUp {
+    transform: translateY(40px);
+  }
+
+  .wow.fadeInLeft {
+    transform: translateX(-40px);
+  }
+
+  .wow.fadeInRight {
+    transform: translateX(40px);
+  }
+
+  .wow.animated {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 /* swiper */
