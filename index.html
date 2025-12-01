@@ -23,6 +23,12 @@
     />
     <!-- swiper -->
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
 
@@ -136,7 +142,7 @@
         <img src="src/img/hero.png" class="absolute right-0 top-0 z-1">
       </div>
 
-      <div class="mx-auto max-w-[1390px] px-4 md:px-8 2xl:px-0">
+      <div class="mx-auto max-w-[1390px] px-4 md:px-8 2xl:px-0 wow animate__animated animate__fadeInLeft">
         <div class="flex lg:items-center">
           <div class="md:w-1/2">
             <h1 class="font-semibold text-3xl lg:text-4xl text-black mb-6">
@@ -1429,10 +1435,20 @@
     </footer>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- swiper -->
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- wowjs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="./src/main.js"></script>
   </body>
 </html>
